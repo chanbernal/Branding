@@ -1,0 +1,146 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    -webkit-text-stroke: white;
+}
+
+.first{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: black;
+}
+
+.toleft{
+    font-size: 200px;
+    font-family: 'Archivo Black', sans-serif;
+    animation: scrollText 20s infinite linear;
+    color: transparent;
+    -webkit-text-stroke: .5px gray;
+    text-transform: uppercase;
+    
+}
+
+.toright{
+    font-size: 400px;
+    font-family: 'Archivo Black', sans-serif;
+    animation: rightscrollText 33s infinite linear;
+    -webkit-text-stroke: .5px gray;
+    text-transform: uppercase;
+    color: transparent;
+    margin: -8%;
+}
+
+@keyframes scrollText {
+  from {
+     transform: translateX(0%); 
+    }
+    to {
+        transform: translateX(-50%); 
+    }
+}
+
+@keyframes rightscrollText {
+    from {
+        transform: translateX(-50%); 
+    }
+      to {
+         transform: translateX(0%); 
+        }
+  }
+
+.wrapper{
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    padding: 15px;
+    border-radius: 5%;
+    height: auto;
+    -webkit-text-stroke: white;
+}
+
+#caption{
+    color: gray;
+    font-family: 'Poiret One', cursive;
+    font-size: 25px;
+}
+
+#title{
+    color: gray;
+    font-size: 75px;
+    font-family: 'Inter', sans-serif;
+}
+
+.note{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 13px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: max-content;
+    border-radius: 2%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.imagewrapper{
+    left: 60vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 5vh;
+}
+
+.imagewrapper img{
+    position: relative;
+    width: 30vw;
+    height: 30vh;
+    margin-bottom: 10px;
+}
+
+.one{
+    transition: 1.5s;
+    filter: grayscale(100%);
+}
+
+.one:hover{
+    transform: translateX(-20%);
+    filter: grayscale(0%);
+    width: 40vw;
+    height: 40vh;
+}
+
+.two{
+    transition: 1.5s;
+    filter: grayscale(100%);
+}
+
+.two:hover{
+    transform: translateX(-20%);
+    filter: grayscale(0%);
+    width: 40vw;
+    height: 40vh;
+}
+
+.three{
+    transition: 1.5s;
+    filter: grayscale(100%);
+}
+
+.three:hover{
+    transform: translateX(-20%);
+    filter: grayscale(0%);
+    width: 40vw;
+    height: 40vh;
+}
